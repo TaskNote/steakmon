@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  steakmon:
+    build: ./steakmon
+    restart: always
+    networks:
+      - isengard
+
+networks:
+  isengard:
+    external: True
