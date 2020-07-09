@@ -1,8 +1,9 @@
 version: '3.7'
 
 services:
+  # traefik will auto route on this context path. expect steakmon will listen on bare slash  
   steakmon:
-    build: ./steakmon
+    build: .
     restart: always
     networks:
       - isengard
